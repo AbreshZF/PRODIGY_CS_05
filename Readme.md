@@ -38,15 +38,15 @@ Unauthorized interception or monitoring of network traffic may violate local law
 - Python 3.10+
 - Scapy
 
-
+```bash
 pip install scapy
-
+```
 
 On Linux/macOS, you may also need:
 
-
+```bash
 sudo apt install tcpdump
-
+```
 
 ---
 
@@ -54,10 +54,11 @@ sudo apt install tcpdump
 
 Clone or download the project:
 
-
+```bash
 git clone https://github.com/AbreshZF/PRODIGY_CS_05/packet-analyzer.git
-cd PRODIGY_CS_05
 
+cd PRODIGY_CS_05
+```
 
 ---
 
@@ -67,33 +68,33 @@ Run with elevated privileges (required for packet sniffing):
 
 ### Basic capture
 
-
+```bash
 sudo python packet_analyzer.py -i wlan0
-
+```
 
 ### Capture HTTP traffic (port-based filter)
 
-
+```bash
 sudo python packet_analyzer.py -i wlan0 -f "tcp port 80"
-
+```
 
 ### Capture HTTPS traffic with limit
 
-
+```bash
 sudo python packet_analyzer.py -i wlan0 -f "tcp port 443" -c 50
-
+```
 
 ### Capture DNS traffic
 
-
+```bash
 sudo python packet_analyzer.py -i wlan0 -f "udp port 53"
-
+```
 
 ### Save output to log file
 
-
+```bash
 sudo python packet_analyzer.py -i wlan0 --log packets.log
-
+```
 
 ---
 
@@ -137,10 +138,11 @@ Payload snippet:
 
 ## Project Structure
 
+```bash
 
 packet-analyzer.py
 README.md
-
+```
 
 ---
 
